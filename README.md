@@ -1,6 +1,6 @@
 # Tweet from terminal
 
-This is just a super simple python script which allows me to tweet from my terminal. Will add support for mastodon soon
+This is just a super simple python script which allows me to tweet and toot from my linux terminal!
 
 ---
 
