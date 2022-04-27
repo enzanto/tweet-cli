@@ -6,7 +6,15 @@ client = tweepy.Client(bearer_token, consumer_key, consumer_secret, access_token
 mastodon = Mastodon(access_token = mastodon_token ,api_base_url = mastodon_url)
 
 def main():
-    tweet = input("compose tweet: ")
+    print("Enter/Paste your content. Ctrl-D or Ctrl-Z ( windows ) to save it.")
+    contents = []
+    while True:
+        try:
+            line = input()
+        except EOFError:
+            break
+        contents.append(line)
+    tweet = '\n'.join(contents)
 
     print("would you like to tweet:")
     print("-----------------")
